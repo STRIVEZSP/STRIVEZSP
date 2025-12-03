@@ -17,14 +17,14 @@ user = g.get_user(username)
 # 获取所有非 fork 仓库，按最后推送时间降序排列
 repos = sorted(
     [repo for repo in user.get_repos() if not repo.fork],
-    key=lambda r: r.pushed_at or datetime.min,
+    key=lambda r: r.pushed_at or datetime.min.replace(tzinfo=timezone.utc),
     reverse=True
 )
 
 # 只取最近更新的前 6 个项目
 latest_repos = repos[:6]
 
-#  项目图标映射
+# 项目图标映射
 project_icons = {
     'AI-tiku': '🧠',
     'CloudPix': '☁️',
@@ -54,7 +54,7 @@ table += f"\n> 🕒 最后更新: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')} (
 # 更新 README
 readme_path = "README.md"
 if not os.path.exists(readme_path):
-    raise FileNotFoundError(" 未找到 README.md 文件，请确保脚本在仓库根目录执行。")
+    raise FileNotFoundError("未找到 README.md 文件，请确保脚本在仓库根目录执行。")
 
 with open(readme_path, "r", encoding="utf-8") as f:
     readme = f.read()
@@ -72,4 +72,4 @@ updated = re.sub(pattern, new_content, readme)
 with open(readme_path, "w", encoding="utf-8") as f:
     f.write(updated)
 
-print(f"成功更新 README.md，包含 {len(latest_repos)} 个最新项目")
+print(f"✅ 成功更新 README.md，包含 {len(latest_repos)} 个最新项目")
