@@ -65,7 +65,7 @@
 | 🚀 [SpringAI-langchain-StudyBot](https://github.com/ZSPSTRIVE/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，结合 La... | Vue | ⭐ 5 |
 | 🧠 [AI-tiku](https://github.com/ZSPSTRIVE/AI-tiku) | 本项目采用 Spring Boot 2.7.x、Vue 3、MySQL、Redis 和 Ela... | Java | ⭐ 2 |
 
-> 🕒 最后更新: 2025-12-03 23:02:43 (UTC+8)
+> 🕒 最后更新: 2025-12-03 23:04:47 (UTC+8)
 
 <!-- PROJECTS-LIST:END -->
 
