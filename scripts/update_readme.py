@@ -23,7 +23,6 @@ project_icons = {
     "SpringAI-langchain-StudyBot": "🤖",
     "AI-tiku": "🧠",
     "AIMovie": "🎞️",
-  
 }
 
 DEFAULT_ICON = "🚀"
@@ -33,7 +32,7 @@ DEFAULT_ICON = "🚀"
 # ===============================
 repos = [repo for repo in user.get_repos() if not repo.fork]
 
-# 最新更新项目（按 pushed_at 排序）
+# 最新更新项目
 latest_repos = sorted(
     repos,
     key=lambda r: r.pushed_at or datetime.min.replace(tzinfo=timezone.utc),
@@ -54,25 +53,18 @@ def build_table(repos, title):
     table = f"### {title}\n\n"
     table += "| 项目名 | 简介 | 技术栈 | Stars |\n"
     table += "|:--------|:------|:--------|:------|\n"
-
     for r in repos:
         icon = project_icons.get(r.name, DEFAULT_ICON)
         desc = (r.description or "暂无描述").replace("|", "｜")
         if len(desc) > 45:
             desc = desc[:42] + "..."
-
         tech_stack = r.language or "Mixed"
-        table += (
-            f"| {icon} [{r.name}]({r.html_url}) | {desc} | {tech_stack} | ⭐ {r.stargazers_count} |\n"
-        )
-
+        table += f"| {icon} [{r.name}]({r.html_url}) | {desc} | {tech_stack} | ⭐ {r.stargazers_count} |\n"
     return table
 
-# 构造两个表格
 latest_table = build_table(latest_repos, "🆕 最新更新项目")
 star_table = build_table(top_star_repos, "🌟 Star 最多项目")
 
-# 更新时间（北京时间）
 beijing_time = datetime.now(timezone.utc) + timedelta(hours=8)
 footer = f"> 🕒 最后更新: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')} (UTC+8)"
 
@@ -84,7 +76,11 @@ readme_path = "README.md"
 with open(readme_path, "r", encoding="utf-8") as f:
     readme = f.read()
 
-# 使用更稳健的正则
+# --------- 新增：删除“🎊代表项目”区域 ---------
+remove_pattern = r"🎊代表项目[\s\S]*?(?=### 🆕 最新更新项目|<!-- PROJECTS-LIST:START -->)"
+readme = re.sub(remove_pattern, "", readme).strip()
+# ------------------------------------------------
+
 pattern = r"(<!-- PROJECTS-LIST:START -->)([\s\S]*?)(<!-- PROJECTS-LIST:END -->)"
 
 replacement_content = (
@@ -100,4 +96,4 @@ updated_readme = re.sub(pattern, replacement_content, readme)
 with open(readme_path, "w", encoding="utf-8") as f:
     f.write(updated_readme)
 
-print("✅ README 已成功更新（最新项目 + Star 最多项目）")
+print("✅ README 已成功更新（无 🎊 项目区块 + 最新项目 + Star 项目）")
