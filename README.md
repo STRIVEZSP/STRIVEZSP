@@ -54,18 +54,32 @@
 | [📈 CARDON-AI-predict](https://github.com/ZSPSTRIVE/CARDON-AI-predict) | 智能预测系统，用 AI 驱动业务决策 | Spring Boot · Machine Learning · Docker |
 
 <!-- PROJECTS-LIST:START -->
+
 ### 🆕 最新更新项目
 
 | 项目名 | 简介 | 技术栈 | Stars |
 |:--------|:------|:--------|:------|
-| 🚀 [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Spring ... | Java | ⭐ 14 |
-| 👤 [ZSPSTRIVE](https://github.com/ZSPSTRIVE/ZSPSTRIVE) | 暂无描述 | Python | ⭐ 2 |
+| 🚀 [ZSPSTRIVE](https://github.com/ZSPSTRIVE/ZSPSTRIVE) | 暂无描述 | Python | ⭐ 2 |
+| 🤖 [SpringAI-langchain-StudyBot](https://github.com/ZSPSTRIVE/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，... | Java | ⭐ 6 |
+| 🎬 [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 15 |
 | 🚀 [Windsurf_FREE_FIXED](https://github.com/ZSPSTRIVE/Windsurf_FREE_FIXED) | 1 | JavaScript | ⭐ 0 |
-| 🧩 [LangChain4j-study-java](https://github.com/ZSPSTRIVE/LangChain4j-study-java) | 基于 Java + Vue + AI 技术栈，集成 LangChain4j 框架，提供 AI ... | Vue | ⭐ 3 |
-| 🚀 [SpringAI-langchain-StudyBot](https://github.com/ZSPSTRIVE/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，结合 La... | Vue | ⭐ 6 |
-| 🧠 [AI-tiku](https://github.com/ZSPSTRIVE/AI-tiku) | 本项目采用 Spring Boot 2.7.x、Vue 3、MySQL、Redis 和 Ela... | Java | ⭐ 3 |
+| 🚀 [LangChain4j-study-java](https://github.com/ZSPSTRIVE/LangChain4j-study-java) | 基于 Java + Vue + AI 技术栈，集成 LangChain4j 框架，提... | Vue | ⭐ 3 |
+| 🧠 [AI-tiku](https://github.com/ZSPSTRIVE/AI-tiku) | 本项目采用 Spring Boot 2.7.x、Vue 3、MySQL、Redis ... | Java | ⭐ 3 |
 
-> 🕒 最后更新: 2025-12-06 19:05:37 (UTC+8)
+
+### 🌟 Star 最多项目
+
+| 项目名 | 简介 | 技术栈 | Stars |
+|:--------|:------|:--------|:------|
+| 🎬 [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 15 |
+| 🚀 [vue-film](https://github.com/ZSPSTRIVE/vue-film) | 果冻影院：萌趣电影票务系统 项目简介 果冻影院 是一个基于 Vue.js、Expre... | Vue | ⭐ 8 |
+| 🤖 [SpringAI-langchain-StudyBot](https://github.com/ZSPSTRIVE/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，... | Java | ⭐ 6 |
+| 🚀 [-Vue3-Node.js-emotion-record](https://github.com/ZSPSTRIVE/-Vue3-Node.js-emotion-record) | 情绪日记 vue 1. 使用vue3开发的每周心情记录，和心情统计项目。前端使用vu... | Vue | ⭐ 5 |
+| 🧠 [AI-tiku](https://github.com/ZSPSTRIVE/AI-tiku) | 本项目采用 Spring Boot 2.7.x、Vue 3、MySQL、Redis ... | Java | ⭐ 3 |
+| 🚀 [CloudPix](https://github.com/ZSPSTRIVE/CloudPix) | 云图库是一个企业级的图片管理和协作平台，支持多用户协作、智能图片处理、空间管理等功能... | Java | ⭐ 3 |
+
+
+> 🕒 最后更新: 2025-12-06 20:15:44 (UTC+8)
 
 <!-- PROJECTS-LIST:END -->
 
