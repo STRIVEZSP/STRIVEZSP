@@ -26,7 +26,11 @@ latest_repos = sorted(
 # 最多 Star 项目（按 stargazers_count 排序，取前6个）
 top_star_repos = sorted(repos, key=lambda r: r.stargazers_count, reverse=True)[:6]
 
- 
+ project_icons = {
+    " ": "🔥",
+    " ": "🤖",
+    " ": "🚀",
+}
 
 def build_table(repos, title):
     """根据仓库列表构造 Markdown 表格"""
