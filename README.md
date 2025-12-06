@@ -77,8 +77,10 @@
 ---
 
 ### 📊 GitHub 统计
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ZSPSTRIVE&show_icons=true&theme=radical&count_private=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ZSPSTRIVE&layout=compact&theme=tokyonight)
+
+![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=ZSPSTRIVE&show_icons=true&theme=radical&count_private=true)
+
+![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=ZSPSTRIVE&layout=compact&theme=tokyonight)
 
 ---
 
