@@ -44,16 +44,7 @@
 
 ---
 
-### 🎊代表项目
-
-| 项目名 | 简介 | 技术栈 |
-|:--------|:------|:--------|
-| [🧠 AI-tiku](https://github.com/ZSPSTRIVE/AI-tiku) | 基于大模型的智能题库系统，支持知识问答与题目解析生成 | Spring Boot · LangChain4j · MySQL · Redis |
-| [☁️ CloudPix](https://github.com/ZSPSTRIVE/CloudPix) | 智能图像生成与管理平台，支持多模态 AI 功能 | Java · Stable Diffusion · FastAPI · OSS |
-| [🧩 LangChain4j-study-java](https://github.com/ZSPSTRIVE/LangChain4j-study-java) | LangChain4j 框架研究与实践，探索企业级 LLM 集成方案 | Java · LangChain4j · OpenAI API |
-| [📈 CARDON-AI-predict](https://github.com/ZSPSTRIVE/CARDON-AI-predict) | 智能预测系统，用 AI 驱动业务决策 | Spring Boot · Machine Learning · Docker |
-
-<!-- PROJECTS-LIST:START -->
+### <!-- PROJECTS-LIST:START -->
 
 ### 🆕 最新更新项目
 
@@ -79,7 +70,7 @@
 | 🚀 [CloudPix](https://github.com/ZSPSTRIVE/CloudPix) | 云图库是一个企业级的图片管理和协作平台，支持多用户协作、智能图片处理、空间管理等功能... | Java | ⭐ 3 |
 
 
-> 🕒 最后更新: 2025-12-06 20:16:01 (UTC+8)
+> 🕒 最后更新: 2025-12-06 20:19:35 (UTC+8)
 
 <!-- PROJECTS-LIST:END -->
 
