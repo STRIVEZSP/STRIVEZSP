@@ -58,14 +58,14 @@
 
 | 项目名 | 简介 | 技术栈 | Stars |
 |:--------|:------|:--------|:------|
-| 🚀 [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Spring ... | Java | ⭐ 12 |
+| 🚀 [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Spring ... | Java | ⭐ 14 |
 | 👤 [ZSPSTRIVE](https://github.com/ZSPSTRIVE/ZSPSTRIVE) | 暂无描述 | Python | ⭐ 2 |
 | 🚀 [Windsurf_FREE_FIXED](https://github.com/ZSPSTRIVE/Windsurf_FREE_FIXED) | 1 | JavaScript | ⭐ 0 |
 | 🧩 [LangChain4j-study-java](https://github.com/ZSPSTRIVE/LangChain4j-study-java) | 基于 Java + Vue + AI 技术栈，集成 LangChain4j 框架，提供 AI ... | Vue | ⭐ 3 |
 | 🚀 [SpringAI-langchain-StudyBot](https://github.com/ZSPSTRIVE/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，结合 La... | Vue | ⭐ 6 |
 | 🧠 [AI-tiku](https://github.com/ZSPSTRIVE/AI-tiku) | 本项目采用 Spring Boot 2.7.x、Vue 3、MySQL、Redis 和 Ela... | Java | ⭐ 3 |
 
-> 🕒 最后更新: 2025-12-05 08:06:43 (UTC+8)
+> 🕒 最后更新: 2025-12-06 19:05:37 (UTC+8)
 
 <!-- PROJECTS-LIST:END -->
 
