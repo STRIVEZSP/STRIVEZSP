@@ -74,10 +74,6 @@
 
 <!-- PROJECTS-LIST:END -->
 
----
-### 📊 GitHub 统计 
-<img src="https://img.shields.io/github/followers/ZSPSTRIVE?label=Followers&style=for-the-badge" />
-<img src="https://img.shields.io/github/stars/ZSPSTRIVE?label=Stars&style=for-the-badge" />
 
 ---
 
