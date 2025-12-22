@@ -51,8 +51,8 @@
 | 项目名 | 简介 | 技术栈 | Stars |
 |:--------|:------|:--------|:------|
 | 🚀 [ZSPSTRIVE](https://github.com/ZSPSTRIVE/ZSPSTRIVE) | 暂无描述 | Python | ⭐ 3 |
-| 🎬 [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 29 |
-| 🤖 [SpringAI-langchain-StudyBot](https://github.com/ZSPSTRIVE/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，... | Java | ⭐ 17 |
+| 🎬 [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 31 |
+| 🤖 [SpringAI-langchain-StudyBot](https://github.com/ZSPSTRIVE/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，... | Java | ⭐ 18 |
 | 🚀 [Windsurf_FREE_FIXED](https://github.com/ZSPSTRIVE/Windsurf_FREE_FIXED) | 1 | JavaScript | ⭐ 1 |
 | 🚀 [LangChain4j-study-java](https://github.com/ZSPSTRIVE/LangChain4j-study-java) | 基于 Java + Vue + AI 技术栈，集成 LangChain4j 框架，提... | Vue | ⭐ 3 |
 | 🧠 [AI-tiku](https://github.com/ZSPSTRIVE/AI-tiku) | 本项目采用 Spring Boot 2.7.x、Vue 3、MySQL、Redis ... | Java | ⭐ 6 |
@@ -62,15 +62,15 @@
 
 | 项目名 | 简介 | 技术栈 | Stars |
 |:--------|:------|:--------|:------|
-| 🎬 [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 29 |
-| 🤖 [SpringAI-langchain-StudyBot](https://github.com/ZSPSTRIVE/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，... | Java | ⭐ 17 |
+| 🎬 [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 31 |
+| 🤖 [SpringAI-langchain-StudyBot](https://github.com/ZSPSTRIVE/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，... | Java | ⭐ 18 |
 | 🚀 [vue-film](https://github.com/ZSPSTRIVE/vue-film) | 果冻影院：萌趣电影票务系统 项目简介 果冻影院 是一个基于 Vue.js、Expre... | Vue | ⭐ 8 |
 | 🧠 [AI-tiku](https://github.com/ZSPSTRIVE/AI-tiku) | 本项目采用 Spring Boot 2.7.x、Vue 3、MySQL、Redis ... | Java | ⭐ 6 |
 | 🚀 [-Vue3-Node.js-emotion-record](https://github.com/ZSPSTRIVE/-Vue3-Node.js-emotion-record) | 情绪日记 vue 1. 使用vue3开发的每周心情记录，和心情统计项目。前端使用vu... | Vue | ⭐ 5 |
 | 🚀 [c-c-coding-record--algorithm](https://github.com/ZSPSTRIVE/c-c-coding-record--algorithm) | C 语言算法模板  一个组织良好的 C 编程算法集合，非常适合初学者和经验丰富的开发... | C++ | ⭐ 3 |
 
 
-> 🕒 最后更新: 2025-12-18 11:14:57 (UTC+8)
+> 🕒 最后更新: 2025-12-22 11:06:29 (UTC+8)
 
 <!-- PROJECTS-LIST:END -->
 
