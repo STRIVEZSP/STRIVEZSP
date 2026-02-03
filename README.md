@@ -1,6 +1,10 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:1c1c1c&height=160&section=header&text=STRIVE&fontSize=64&fontColor=ffffff&animation=twinkling"/>
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&height=170&section=header&text=STRIVE&fontSize=66&fontColor=ffffff&animation=twinkling&color=0:ff2d55,18:af52de,36:5e5ce6,54:64d2ff,72:30d158,90:ffd60a,100:ff9f0a&desc=%E2%88%AB%20e%5E(-x%5E2)%20dx%20%20%20%E2%88%91%20w_i%20x_i%20%20%20%E2%88%87%C2%B7F%3D0%20%20%20A%5ET%20A%20%20%20O(n%20log%20n)&descAlign=50&descAlignY=80"
+    alt="STRIVE"
+  />
 </p>
+
 
 ---
 
