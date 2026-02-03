@@ -1,9 +1,10 @@
 <p align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=170&section=header&text=STRIVE&fontSize=66&fontColor=ffffff&animation=twinkling&color=0:ff2d55,18:af52de,36:5e5ce6,54:64d2ff,72:30d158,90:ffd60a,100:ff9f0a&desc=%E2%88%AB%20e%5E(-x%5E2)%20dx%20%20%20%E2%88%91%20w_i%20x_i%20%20%20%E2%88%87%C2%B7F%3D0%20%20%20A%5ET%20A%20%20%20O(n%20log%20n)&descAlign=50&descAlignY=80"
+    src="https://capsule-render.vercel.app/api?type=waving&height=190&section=header&text=STRIVE&fontSize=72&fontColor=ffffff&fontAlignY=40&animation=twinkling&color=0:ff2d55,16:af52de,32:5e5ce6,48:64d2ff,64:30d158,82:ffd60a,100:ff9f0a&desc=int%20e%5E(-x%5E2)%20dx%20%7C%20sum%20w_i*x_i%20%7C%20grad%20F%20%3D%200%20%7C%20A%5ET*A%20%7C%20O(n%20log%20n)&descAlign=50&descAlignY=72&descSize=16"
     alt="STRIVE"
   />
 </p>
+
 
 
 ---
