@@ -96,6 +96,7 @@ GitHub：https://github.com/ZSPSTRIVE
 
 ## 更多内容
 
-博客：https://blog.csdn.net/weixin_51634706?spm=1000.2115.3001.5343
+博客：[CSDN](https://blog.csdn.net/weixin_51634706)
+
 
 > Speak less, do more.
