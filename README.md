@@ -1,10 +1,5 @@
 <p align="center">
-  <strong style="font-size: 28px;">STRIVE</strong>
-  <br/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="22" height="22" alt="Java" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="22" height="22" alt="Spring" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="22" height="22" alt="Docker" />
-  <img src="https://cdn.simpleicons.org/openai/111111" width="20" height="20" alt="AI" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:1c1c1c&height=160&section=header&text=STRIVE&fontSize=64&fontColor=ffffff&animation=twinkling"/>
 </p>
 
 ---
