@@ -1,9 +1,19 @@
-# STRIVE
+<p align="center">
+  <strong style="font-size: 28px;">STRIVE</strong>
+  <br/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="22" height="22" alt="Java" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="22" height="22" alt="Spring" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="22" height="22" alt="Docker" />
+  <img src="https://cdn.simpleicons.org/openai/111111" width="20" height="20" alt="AI" />
+</p>
+
+---
+
 
 后端 / AI 应用开发者  
 专注 Java 与大模型应用落地；偏好高并发、高可用、工程化可维护的系统实现  
-研究方向：AI 知识库、RAG、LangChain 应用、智能题库、生成式系统、Agent 架构（LangChain4j）
-
+研究方向：AI 知识库、RAG、LangChain 应用、生成式系统、Agent 架构（LangChain4j）
+熟悉使用 Cursor 、Antigravity、Windsurf、TRAE等AI-IDE
 GitHub：https://github.com/ZSPSTRIVE
 
 ---
