@@ -117,6 +117,44 @@ def _replace_projects_block(readme: str, new_block: str) -> str:
     return (readme.rstrip() + "\n\n" + new_block + "\n").rstrip() + "\n"
 
 
+def _build_achievements_block(followers: int, stars: int) -> str:
+    """构造 成就 & 活动 模块，使用硬编码的数值（避免 Shield 缓存问题）。"""
+    # 构造带数值的 static badge URL
+    # format: label=Followers&message=<count>&color=lightgrey&style=social&logo=github
+    followers_url = f"https://img.shields.io/static/v1?label=Followers&message={followers}&color=lightgrey&style=social&logo=github"
+    stars_url = f"https://img.shields.io/static/v1?label=Stars&message={stars}&color=lightgrey&style=social&logo=github"
+    # Profile Views 只能动态，komarev 不支持 static
+    views_url = "https://komarev.com/ghpvc/?username=ZSPSTRIVE&color=brightgreen"
+
+    lines = [
+        "## 成就 & 活动",
+        "",
+        f"![Followers]({followers_url})",
+        f"![Stars]({stars_url})",
+        f"![Profile Views]({views_url})",
+    ]
+    return "\n".join(lines)
+
+
+def _replace_achievements_block(readme: str, new_block: str) -> str:
+    """
+    替换 '## 成就 & 活动' 区域。
+    匹配规则：从 '## 成就 & 活动' 开始，直到下一个 '---' 或 '## ' 或文件结束。
+    """
+    # 这里的正则要小心，确保只匹配到下一个分隔符
+    # (?=...) 是 lookahead assertion
+    pattern = re.compile(
+        r"^## 成就 & 活动[\s\S]*?(?=^---|^## |\Z)",
+        re.MULTILINE
+    )
+
+    if pattern.search(readme):
+        return re.sub(pattern, new_block + "\n\n", readme, count=1)
+    
+    # 未找到则追加
+    return (readme.rstrip() + "\n\n" + new_block + "\n").rstrip() + "\n"
+
+
 # ===============================
 # 3. 拉取所有非 fork 仓库（可选过滤 archived）
 # ===============================
@@ -173,7 +211,18 @@ with open(README_PATH, "r", encoding="utf-8") as f:
 readme = _remove_represent_block(readme)
 updated = _replace_projects_block(readme, replacement_block)
 
+# ===============================
+# 5. 生成并替换 成就 & 活动 模块
+# ===============================
+total_stars = sum(r.stargazers_count for r in repos)
+followers = user.followers
+
+print(f"统计数据: Followers={followers}, Total Stars={total_stars}")
+
+achievements_block = _build_achievements_block(followers, total_stars)
+updated = _replace_achievements_block(updated, achievements_block)
+
 with open(README_PATH, "w", encoding="utf-8") as f:
     f.write(updated)
 
-print("✅ README 已成功更新：项目列表块已刷新（最新项目 + Star 项目），并移除 🎊代表项目（如存在）")
+print("✅ README 已成功更新：项目列表块已刷新，成就模块已更新（Followers/Stars）")
