@@ -1,7 +1,8 @@
 <p align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=190&section=header&text=STRIVE&fontSize=72&fontColor=ffffff&fontAlignY=40&animation=twinkling&color=0:ff2d55,16:af52de,32:5e5ce6,48:64d2ff,64:30d158,82:ffd60a,100:ff9f0a&desc=int%20e%5E(-x%5E2)%20dx%20%7C%20sum%20w_i*x_i%20%7C%20grad%20F%20%3D%200%20%7C%20A%5ET*A%20%7C%20O(n%20log%20n)&descAlign=50&descAlignY=72&descSize=16"
+    src="./assets/header_apple.svg"
     alt="STRIVE"
+    width="100%"
   />
 </p>
 

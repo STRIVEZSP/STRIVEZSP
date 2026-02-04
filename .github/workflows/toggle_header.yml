@@ -1,0 +1,40 @@
+name: Toggle Header SVG
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'README.md'
+      # Avoid infinite loops by excluding the assets themselves if only they change, 
+      # but usually we want this to run when docs update.
+      # Ideally, we want this to run on *any* update to keep it fresh, or maybe schedule?
+      # The user said "Every time update document -> toggle icon".
+      # So `push` on README.md is the trigger.
+
+jobs:
+  toggle-header:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run toggle script
+        run: python scripts/toggle_header.py
+
+      - name: Commit and Push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "style(readme): toggle header SVG style"
+          file_pattern: README.md
