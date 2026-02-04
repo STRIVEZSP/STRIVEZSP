@@ -19,13 +19,20 @@ LATEST_N = 6
 TOP_STAR_N = 6
 
 # 项目图标配置（没有就走 DEFAULT_ICON）
+# 使用 Phosphor Icons (Bold) via Iconify
+ICON_BASE = "https://api.iconify.design/ph:{name}.svg?color=%23000000"
+
+def _get_icon_img(name: str) -> str:
+    url = ICON_BASE.format(name=name)
+    return f'<img src="{url}" width="20" height="20" style="vertical-align:middle; margin-right:4px;" />'
+
 PROJECT_ICONS: Dict[str, str] = {
-    "AI_Movie": "🎬",
-    "SpringAI-langchain-StudyBot": "🤖",
-    "AI-tiku": "🧠",
-    "AIMovie": "🎞️",
+    "AI_Movie": _get_icon_img("film-strip-bold"),
+    "SpringAI-langchain-StudyBot": _get_icon_img("robot-bold"),
+    "AI-tiku": _get_icon_img("brain-bold"),
+    "AIMovie": _get_icon_img("film-slate-bold"),
 }
-DEFAULT_ICON = "🚀"
+DEFAULT_ICON = _get_icon_img("rocket-launch-bold")
 
 # 时区：UTC+8
 TZ_CN = timezone(timedelta(hours=8))

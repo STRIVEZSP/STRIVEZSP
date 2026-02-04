@@ -13,8 +13,11 @@
 
 后端 / AI 应用开发者  
 专注 Java 与大模型应用落地；偏好高并发、高可用、工程化可维护的系统实现  
-研究方向：AI 知识库、RAG、LangChain 应用、生成式系统、Agent 架构（LangChain4j）
+
+研究方向：AI 知识库、RAG、LangChain 应用、生成式系统、Agent 架构（LangChain4j）    
+
 熟悉使用 Cursor 、Antigravity、Windsurf、TRAE等AI-IDE
+
 GitHub：https://github.com/ZSPSTRIVE
 
 ---
