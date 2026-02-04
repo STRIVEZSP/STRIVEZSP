@@ -69,7 +69,7 @@ GitHub：https://github.com/ZSPSTRIVE
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [Sport_community](https://github.com/ZSPSTRIVE/Sport_community) | Spring Boot+Vue3运动社区云图库，打卡排行、社区互动、图片管理+AI。... | Vue | ⭐ 3 |
 | <img src="https://api.iconify.design/ph:film-strip-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 41 |
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [Windsurf_FREE_FIXED](https://github.com/ZSPSTRIVE/Windsurf_FREE_FIXED) | 1 | JavaScript | ⭐ 1 |
-| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [LangChain4j-study-java](https://github.com/ZSPSTRIVE/LangChain4j-study-java) | 基于 Java + Vue + AI 技术栈，集成 LangChain4j 框架，提... | Vue | ⭐ 3 |
+| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [LangChain4j-study-java](https://github.com/ZSPSTRIVE/LangChain4j-study-java) | 基于 Java + Vue + AI 技术栈，集成 LangChain4j 框架，提... | Vue | ⭐ 4 |
 
 
 ### 🌟 Star 最多项目
@@ -84,7 +84,7 @@ GitHub：https://github.com/ZSPSTRIVE
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [ZSTRIVE.](https://github.com/ZSPSTRIVE/ZSTRIVE.) | 没有说明的说明就是最好的说明 | Mixed | ⭐ 4 |
 
 
-> 🕒 最后更新: 2026-02-04 15:13:27 (UTC+8)
+> 🕒 最后更新: 2026-02-04 15:15:04 (UTC+8)
 
 <!-- PROJECTS-LIST:END -->
 
@@ -93,7 +93,7 @@ GitHub：https://github.com/ZSPSTRIVE
 ## 成就 & 活动
 
 ![Followers](https://img.shields.io/static/v1?label=Followers&message=5&color=lightgrey&style=social&logo=github)
-![Stars](https://img.shields.io/static/v1?label=Stars&message=111&color=lightgrey&style=social&logo=github)
+![Stars](https://img.shields.io/static/v1?label=Stars&message=113&color=lightgrey&style=social&logo=github)
 ![Profile Views](https://komarev.com/ghpvc/?username=ZSPSTRIVE&color=brightgreen)
 
 ---
