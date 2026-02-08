@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="./assets/header_apple.svg"
+    src="./assets/header_google.svg"
     alt="STRIVE"
     width="100%"
   />
