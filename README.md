@@ -22,6 +22,14 @@ GitHub：https://github.com/ZSPSTRIVE
 
 ---
 
+## 成就 & 活动
+
+![Followers](https://img.shields.io/static/v1?label=Followers&message=4&color=lightgrey&style=social&logo=github)
+![Stars](https://img.shields.io/static/v1?label=Stars&message=118&color=lightgrey&style=social&logo=github)
+![Profile Views](https://komarev.com/ghpvc/?username=ZSPSTRIVE&color=brightgreen)
+
+---
+
 ## 技术标签
 
 ### 后端
@@ -87,14 +95,6 @@ GitHub：https://github.com/ZSPSTRIVE
 > 🕒 最后更新: 2026-02-05 23:42:17 (UTC+8)
 
 <!-- PROJECTS-LIST:END -->
-
----
-
-## 成就 & 活动
-
-![Followers](https://img.shields.io/static/v1?label=Followers&message=4&color=lightgrey&style=social&logo=github)
-![Stars](https://img.shields.io/static/v1?label=Stars&message=118&color=lightgrey&style=social&logo=github)
-![Profile Views](https://komarev.com/ghpvc/?username=ZSPSTRIVE&color=brightgreen)
 
 ---
 
