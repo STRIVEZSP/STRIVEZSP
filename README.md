@@ -24,7 +24,7 @@ GitHub：https://github.com/ZSPSTRIVE
 
 ## 成就 & 活动
 
-![Followers](https://img.shields.io/static/v1?label=Followers&message=5&color=lightgrey&style=social&logo=github)
+![Followers](https://img.shields.io/static/v1?label=Followers&message=6&color=lightgrey&style=social&logo=github)
 ![Stars](https://img.shields.io/static/v1?label=Stars&message=120&color=lightgrey&style=social&logo=github)
 ![Profile Views](https://komarev.com/ghpvc/?username=ZSPSTRIVE&color=brightgreen)
 
@@ -92,7 +92,7 @@ GitHub：https://github.com/ZSPSTRIVE
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [ZSTRIVE.](https://github.com/ZSPSTRIVE/ZSTRIVE.) | 没有说明的说明就是最好的说明 | Mixed | ⭐ 4 |
 
 
-> 🕒 最后更新: 2026-02-08 22:32:43 (UTC+8)
+> 🕒 最后更新: 2026-02-09 12:57:10 (UTC+8)
 
 <!-- PROJECTS-LIST:END -->
 
