@@ -12,7 +12,7 @@
 
 
 后端 / AI 应用开发者  
-专注 Java 与大模型应用落地；偏好高并发、高可用、工程化可维护的系统实现  
+想结合 Java 与大模型应用落地；
 
 研究方向：AI 知识库、RAG、LangChain 应用、生成式系统、Agent 架构（LangChain4j）    
 
@@ -42,7 +42,6 @@ GitHub：https://github.com/ZSPSTRIVE
 
 ### Cloud Native & Middleware
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=fff)
 ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?logo=rabbitmq&logoColor=fff)
 ![RocketMQ](https://img.shields.io/badge/RocketMQ-00A9E0?logo=apache&logoColor=fff)
 
@@ -50,8 +49,6 @@ GitHub：https://github.com/ZSPSTRIVE
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=fff)
 ![SLF4J](https://img.shields.io/badge/SLF4J-009688?logo=log4j&logoColor=fff)
 ![Logback](https://img.shields.io/badge/Logback-008000?logo=logback&logoColor=fff)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=fff)
-
 ### AI & LLM
 ![LangChain4j](https://img.shields.io/badge/LangChain4j-FFB300?logo=java&logoColor=fff)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=fff)
