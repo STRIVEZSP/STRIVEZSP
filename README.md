@@ -48,7 +48,6 @@ GitHub：https://github.com/ZSPSTRIVE
 ### 文档生成 & 日志与监控
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=fff)
 ![SLF4J](https://img.shields.io/badge/SLF4J-009688?logo=log4j&logoColor=fff)
-![Logback](https://img.shields.io/badge/Logback-008000?logo=logback&logoColor=fff)
 ### AI & LLM
 ![LangChain4j](https://img.shields.io/badge/LangChain4j-FFB300?logo=java&logoColor=fff)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=fff)
