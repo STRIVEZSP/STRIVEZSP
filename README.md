@@ -25,7 +25,7 @@ GitHub：https://github.com/ZSPSTRIVE
 ## 成就 & 活动
 
 ![Followers](https://img.shields.io/static/v1?label=Followers&message=6&color=lightgrey&style=social&logo=github)
-![Stars](https://img.shields.io/static/v1?label=Stars&message=138&color=lightgrey&style=social&logo=github)
+![Stars](https://img.shields.io/static/v1?label=Stars&message=140&color=lightgrey&style=social&logo=github)
 ![Profile Views](https://komarev.com/ghpvc/?username=ZSPSTRIVE&color=brightgreen)
 
 ---
@@ -70,7 +70,7 @@ GitHub：https://github.com/ZSPSTRIVE
 |:--------|:------|:--------|:------|
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [ZSPSTRIVE](https://github.com/ZSPSTRIVE/ZSPSTRIVE) | 暂无描述 | Python | ⭐ 3 |
 | <img src="https://api.iconify.design/ph:robot-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [SpringAI-langchain-StudyBot](https://github.com/ZSPSTRIVE/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，... | Java | ⭐ 42 |
-| <img src="https://api.iconify.design/ph:film-strip-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 50 |
+| <img src="https://api.iconify.design/ph:film-strip-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 52 |
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [Sport_community](https://github.com/ZSPSTRIVE/Sport_community) | Spring Boot+Vue3运动社区云图库，打卡排行、社区互动、图片管理+AI。... | Vue | ⭐ 4 |
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [Windsurf_FREE_FIXED](https://github.com/ZSPSTRIVE/Windsurf_FREE_FIXED) | 1 | JavaScript | ⭐ 1 |
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [LangChain4j-study-java](https://github.com/ZSPSTRIVE/LangChain4j-study-java) | 基于 Java + Vue + AI 技术栈，集成 LangChain4j 框架，提... | Vue | ⭐ 4 |
@@ -80,7 +80,7 @@ GitHub：https://github.com/ZSPSTRIVE
 
 | 项目名 | 简介 | 技术栈 | Stars |
 |:--------|:------|:--------|:------|
-| <img src="https://api.iconify.design/ph:film-strip-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 50 |
+| <img src="https://api.iconify.design/ph:film-strip-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 52 |
 | <img src="https://api.iconify.design/ph:robot-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [SpringAI-langchain-StudyBot](https://github.com/ZSPSTRIVE/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，... | Java | ⭐ 42 |
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [vue-film](https://github.com/ZSPSTRIVE/vue-film) | 果冻影院：萌趣电影票务系统 项目简介 果冻影院 是一个基于 Vue.js、Expre... | Vue | ⭐ 9 |
 | <img src="https://api.iconify.design/ph:brain-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AI-tiku](https://github.com/ZSPSTRIVE/AI-tiku) | 本项目采用 Spring Boot 2.7.x、Vue 3、MySQL、Redis ... | Java | ⭐ 6 |
@@ -88,7 +88,7 @@ GitHub：https://github.com/ZSPSTRIVE
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [ZSTRIVE.](https://github.com/ZSPSTRIVE/ZSTRIVE.) | 没有说明的说明就是最好的说明 | Mixed | ⭐ 4 |
 
 
-> 🕒 最后更新: 2026-03-09 03:18:53 (UTC+8)
+> 🕒 最后更新: 2026-03-10 03:35:49 (UTC+8)
 
 <!-- PROJECTS-LIST:END -->
 
