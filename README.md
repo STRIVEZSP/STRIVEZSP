@@ -68,8 +68,8 @@ GitHub：https://github.com/ZSPSTRIVE
 
 | 项目名 | 简介 | 技术栈 | Stars |
 |:--------|:------|:--------|:------|
-| <img src="https://api.iconify.design/ph:film-strip-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 56 |
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [ZSPSTRIVE](https://github.com/ZSPSTRIVE/ZSPSTRIVE) | 暂无描述 | Python | ⭐ 3 |
+| <img src="https://api.iconify.design/ph:film-strip-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AI_Movie](https://github.com/ZSPSTRIVE/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 56 |
 | <img src="https://api.iconify.design/ph:robot-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [SpringAI-langchain-StudyBot](https://github.com/ZSPSTRIVE/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，... | Java | ⭐ 44 |
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [Sport_community](https://github.com/ZSPSTRIVE/Sport_community) | Spring Boot+Vue3运动社区云图库，打卡排行、社区互动、图片管理+AI。... | Vue | ⭐ 4 |
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [Windsurf_FREE_FIXED](https://github.com/ZSPSTRIVE/Windsurf_FREE_FIXED) | 1 | JavaScript | ⭐ 1 |
@@ -88,7 +88,7 @@ GitHub：https://github.com/ZSPSTRIVE
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [ZSTRIVE.](https://github.com/ZSPSTRIVE/ZSTRIVE.) | 没有说明的说明就是最好的说明 | Mixed | ⭐ 4 |
 
 
-> 🕒 最后更新: 2026-03-12 22:01:13 (UTC+8)
+> 🕒 最后更新: 2026-03-13 03:37:48 (UTC+8)
 
 <!-- PROJECTS-LIST:END -->
 
