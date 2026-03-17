@@ -6,8 +6,13 @@
   />
 </p>
 
+<!-- TOTAL-STARS-HISTORY:START -->
+## Total Stars History
 
-
+<p align="center">
+  <img src="./assets/total-stars-history.svg" alt="Total Stars History for all repositories" width="100%" />
+</p>
+<!-- TOTAL-STARS-HISTORY:END -->
 
 ---
 
@@ -62,9 +67,6 @@ GitHub：https://github.com/ZSPSTRIVE
 ![Element Plus](https://img.shields.io/badge/Element%20Plus-409EFF?logo=element&logoColor=fff)
 
 ---
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=ZSPSTRIVE/Film-v1&type=Date)](https://www.star-history.com/#ZSPSTRIVE/Film-v1&Date)
 ---
 
 <!-- PROJECTS-LIST:START -->
