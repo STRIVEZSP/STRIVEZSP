@@ -8,6 +8,7 @@
 
 
 
+
 ---
 
 
@@ -61,6 +62,10 @@ GitHub：https://github.com/ZSPSTRIVE
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff)
 ![Element Plus](https://img.shields.io/badge/Element%20Plus-409EFF?logo=element&logoColor=fff)
 
+---
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ZSPSTRIVE/Film-v1&type=Date)](https://www.star-history.com/#ZSPSTRIVE/Film-v1&Date)
 ---
 
 <!-- PROJECTS-LIST:START -->
