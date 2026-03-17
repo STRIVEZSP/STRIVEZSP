@@ -7,10 +7,10 @@
 </p>
 
 <!-- TOTAL-STARS-HISTORY:START -->
-## Total Stars History
+## 总星数趋势
 
 <p align="center">
-  <img src="./assets/total-stars-history.svg" alt="Total Stars History for all repositories" width="100%" />
+  <img src="./assets/total-stars-history.svg" alt="所有项目累计星数趋势图" width="100%" />
 </p>
 <!-- TOTAL-STARS-HISTORY:END -->
 

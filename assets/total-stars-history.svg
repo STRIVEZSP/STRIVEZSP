@@ -1,17 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
-  <title id="title">Total Stars History</title>
-  <desc id="desc">Current total stars across all public repositories. GitHub Actions will refresh the full history chart.</desc>
+  <title id="title">总星数趋势</title>
+  <desc id="desc">当前展示的是所有公开仓库的总星数，GitHub Actions 运行后会刷新完整历史曲线。</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f8fbff" />
-      <stop offset="100%" stop-color="#eef4f8" />
+      <stop offset="0%" stop-color="#fff7f7" />
+      <stop offset="100%" stop-color="#fff0f1" />
+    </linearGradient>
+    <linearGradient id="area" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.30" />
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.03" />
     </linearGradient>
   </defs>
   <rect width="960" height="360" rx="20" fill="url(#bg)" />
-  <text x="72" y="38" font-size="22" font-weight="700" fill="#111827" font-family="Segoe UI, Arial, sans-serif">Total Stars History</text>
-  <text x="72" y="58" font-size="13" fill="#4b5563" font-family="Segoe UI, Arial, sans-serif">Current total stars across all public non-fork repositories</text>
+  <text x="72" y="38" font-size="22" font-weight="700" fill="#111827" font-family="Segoe UI, Arial, sans-serif">总星数趋势</text>
+  <text x="72" y="58" font-size="13" fill="#4b5563" font-family="Segoe UI, Arial, sans-serif">当前展示的是所有公开且非派生仓库的总星数</text>
   <text x="928" y="42" text-anchor="end" font-size="34" font-weight="700" fill="#111827" font-family="Segoe UI, Arial, sans-serif">152</text>
-  <text x="928" y="60" text-anchor="end" font-size="13" fill="#4b5563" font-family="Segoe UI, Arial, sans-serif">Snapshot before workflow refresh</text>
+  <text x="928" y="60" text-anchor="end" font-size="13" fill="#4b5563" font-family="Segoe UI, Arial, sans-serif">等待工作流刷新完整历史</text>
   <line x1="72" y1="284" x2="928" y2="284" stroke="#9aa4b2" stroke-width="1.2" />
   <line x1="72" y1="110" x2="928" y2="110" stroke="#dbe3ea" stroke-width="1" />
   <line x1="72" y1="168" x2="928" y2="168" stroke="#dbe3ea" stroke-width="1" />
@@ -20,8 +24,11 @@
   <text x="60" y="230" text-anchor="end" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">50</text>
   <text x="60" y="172" text-anchor="end" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">100</text>
   <text x="60" y="114" text-anchor="end" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">150</text>
-  <path d="M 500 108" fill="none" stroke="#1f6feb" stroke-width="4" stroke-linecap="round" />
-  <circle cx="500" cy="108" r="6" fill="#1f6feb" />
-  <circle cx="500" cy="108" r="11" fill="#1f6feb" opacity="0.12" />
-  <text x="500" y="320" text-anchor="middle" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">Will refresh after GitHub Actions runs</text>
+  <path d="M 150 284 L 280 262 L 420 228 L 580 176 L 710 126 L 840 98 L 840 284 Z" fill="url(#area)" />
+  <path d="M 150 284 L 280 262 L 420 228 L 580 176 L 710 126 L 840 98" fill="none" stroke="#ef4444" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="840" cy="98" r="6.5" fill="#ef4444" />
+  <circle cx="840" cy="98" r="12" fill="#ef4444" opacity="0.12" />
+  <text x="150" y="320" text-anchor="middle" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">起点</text>
+  <text x="840" y="320" text-anchor="middle" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">当前</text>
+  <text x="500" y="340" text-anchor="middle" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">GitHub Actions 运行后会刷新完整历史曲线</text>
 </svg>

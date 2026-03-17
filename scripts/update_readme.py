@@ -192,15 +192,19 @@ def _build_total_stars_history_svg(
     plot_height = height - top - bottom
 
     dates = [item[0] for item in series]
+    values = [item[1] for item in series]
     start_date = dates[0]
     end_date = dates[-1]
     span_days = max((end_date - start_date).days, 1)
 
     y_max = max(total_stars, 1)
-    y_ceiling = max(5, int(math.ceil(y_max * 1.15)))
-    if y_ceiling >= 10:
-        magnitude = 10 ** (len(str(y_ceiling)) - 1)
-        y_ceiling = int(math.ceil(y_ceiling / magnitude) * magnitude)
+    y_ceiling = max(5, int(math.ceil(y_max * 1.06)))
+    if y_ceiling < 500:
+        y_ceiling = int(math.ceil(y_ceiling / 10) * 10)
+    elif y_ceiling < 2000:
+        y_ceiling = int(math.ceil(y_ceiling / 50) * 50)
+    else:
+        y_ceiling = int(math.ceil(y_ceiling / 100) * 100)
 
     def x_scale(date_value: date) -> float:
         if len(series) == 1:
@@ -210,7 +214,13 @@ def _build_total_stars_history_svg(
     def y_scale(value: int) -> float:
         return top + plot_height - (value / y_ceiling) * plot_height
 
-    points = [(x_scale(date_value), y_scale(value)) for date_value, value in series]
+    if len(series) == 1:
+        points = [
+            (left + plot_width * 0.12, top + plot_height),
+            (left + plot_width * 0.88, y_scale(values[0])),
+        ]
+    else:
+        points = [(x_scale(date_value), y_scale(value)) for date_value, value in series]
     line_path = "M " + " L ".join(f"{x:.2f} {y:.2f}" for x, y in points)
     area_path = (
         f"M {points[0][0]:.2f} {top + plot_height:.2f} "
@@ -223,13 +233,6 @@ def _build_total_stars_history_svg(
         tick = int(round((y_ceiling / 4) * idx))
         if tick not in y_ticks:
             y_ticks.append(tick)
-
-    mid_date = start_date + timedelta(days=span_days // 2)
-    x_labels = [
-        (start_date, start_date.strftime("%Y-%m")),
-        (mid_date, mid_date.strftime("%Y-%m")),
-        (end_date, end_date.strftime("%Y-%m")),
-    ]
 
     grid_lines: List[str] = []
     for tick in y_ticks:
@@ -245,42 +248,58 @@ def _build_total_stars_history_svg(
         )
 
     x_axis_labels: List[str] = []
-    seen_x: List[str] = []
-    for label_date, label_text in x_labels:
-        x = f"{x_scale(label_date):.2f}"
-        if x in seen_x:
-            continue
-        seen_x.append(x)
+    if len(series) == 1:
         x_axis_labels.append(
-            f'<text x="{x}" y="{top + plot_height + 28:.2f}" text-anchor="middle" '
-            'font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">'
-            f"{escape(label_text)}</text>"
+            f'<text x="{points[0][0]:.2f}" y="{top + plot_height + 28:.2f}" text-anchor="middle" '
+            'font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">起点</text>'
         )
+        x_axis_labels.append(
+            f'<text x="{points[-1][0]:.2f}" y="{top + plot_height + 28:.2f}" text-anchor="middle" '
+            'font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">当前</text>'
+        )
+    else:
+        mid_date = start_date + timedelta(days=span_days // 2)
+        x_labels = [
+            (start_date, start_date.strftime("%Y-%m")),
+            (mid_date, mid_date.strftime("%Y-%m")),
+            (end_date, end_date.strftime("%Y-%m")),
+        ]
+        seen_x: List[str] = []
+        for label_date, label_text in x_labels:
+            x = f"{x_scale(label_date):.2f}"
+            if x in seen_x:
+                continue
+            seen_x.append(x)
+            x_axis_labels.append(
+                f'<text x="{x}" y="{top + plot_height + 28:.2f}" text-anchor="middle" '
+                'font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">'
+                f"{escape(label_text)}</text>"
+            )
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
-  <title id="title">Total Stars History</title>
-  <desc id="desc">Cumulative stars across all public non-fork repositories.</desc>
+  <title id="title">总星数趋势</title>
+  <desc id="desc">所有公开且非派生仓库的累计星数变化。</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f8fbff" />
-      <stop offset="100%" stop-color="#eef4f8" />
+      <stop offset="0%" stop-color="#fff7f7" />
+      <stop offset="100%" stop-color="#fff0f1" />
     </linearGradient>
     <linearGradient id="area" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1f6feb" stop-opacity="0.24" />
-      <stop offset="100%" stop-color="#1f6feb" stop-opacity="0.02" />
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.30" />
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.03" />
     </linearGradient>
   </defs>
   <rect width="{width}" height="{height}" rx="20" fill="url(#bg)" />
-  <text x="{left}" y="38" font-size="22" font-weight="700" fill="#111827" font-family="Segoe UI, Arial, sans-serif">Total Stars History</text>
+  <text x="{left}" y="38" font-size="22" font-weight="700" fill="#111827" font-family="Segoe UI, Arial, sans-serif">总星数趋势</text>
   <text x="{left}" y="58" font-size="13" fill="#4b5563" font-family="Segoe UI, Arial, sans-serif">{escape(subtitle)}</text>
   <text x="{width - right}" y="42" text-anchor="end" font-size="34" font-weight="700" fill="#111827" font-family="Segoe UI, Arial, sans-serif">{total_stars}</text>
-  <text x="{width - right}" y="60" text-anchor="end" font-size="13" fill="#4b5563" font-family="Segoe UI, Arial, sans-serif">{repo_count} repos combined</text>
+  <text x="{width - right}" y="60" text-anchor="end" font-size="13" fill="#4b5563" font-family="Segoe UI, Arial, sans-serif">共 {repo_count} 个仓库</text>
   {''.join(grid_lines)}
   <line x1="{left}" y1="{top + plot_height:.2f}" x2="{left + plot_width}" y2="{top + plot_height:.2f}" stroke="#9aa4b2" stroke-width="1.2" />
   <path d="{area_path}" fill="url(#area)" />
-  <path d="{line_path}" fill="none" stroke="#1f6feb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <circle cx="{points[-1][0]:.2f}" cy="{points[-1][1]:.2f}" r="6" fill="#1f6feb" />
-  <circle cx="{points[-1][0]:.2f}" cy="{points[-1][1]:.2f}" r="11" fill="#1f6feb" opacity="0.12" />
+  <path d="{line_path}" fill="none" stroke="#ef4444" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="{points[-1][0]:.2f}" cy="{points[-1][1]:.2f}" r="6.5" fill="#ef4444" />
+  <circle cx="{points[-1][0]:.2f}" cy="{points[-1][1]:.2f}" r="12" fill="#ef4444" opacity="0.12" />
   {''.join(x_axis_labels)}
 </svg>
 """
@@ -290,10 +309,10 @@ def _build_total_stars_history_block() -> str:
     return "\n".join(
         [
             "<!-- TOTAL-STARS-HISTORY:START -->",
-            "## Total Stars History",
+            "## 总星数趋势",
             "",
             '<p align="center">',
-            '  <img src="./assets/total-stars-history.svg" alt="Total Stars History for all repositories" width="100%" />',
+            '  <img src="./assets/total-stars-history.svg" alt="所有项目累计星数趋势图" width="100%" />',
             "</p>",
             "<!-- TOTAL-STARS-HISTORY:END -->",
         ]
@@ -433,11 +452,11 @@ followers = user.followers
 
 try:
     total_stars_series = _build_total_stars_series(repos, total_stars)
-    total_stars_subtitle = "Cumulative stars across all public non-fork repositories"
+    total_stars_subtitle = "所有公开且非派生仓库的累计星数变化"
 except Exception as exc:
     print(f"⚠️ 总星数历史图生成失败，回退为当前总数展示: {exc}")
     total_stars_series = [(datetime.now(TZ_CN).date(), total_stars)]
-    total_stars_subtitle = "Current total stars; full history will refresh on the next successful workflow run"
+    total_stars_subtitle = "当前展示的是总星数，完整历史会在下次 GitHub Actions 成功运行后刷新"
 
 star_history_svg = _build_total_stars_history_svg(
     total_stars_series,
