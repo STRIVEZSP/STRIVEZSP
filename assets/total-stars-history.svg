@@ -1,34 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
-  <title id="title">总星数趋势</title>
-  <desc id="desc">当前展示的是所有公开仓库的总星数，GitHub Actions 运行后会刷新完整历史曲线。</desc>
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fff7f7" />
-      <stop offset="100%" stop-color="#fff0f1" />
-    </linearGradient>
-    <linearGradient id="area" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.30" />
-      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.03" />
-    </linearGradient>
-  </defs>
-  <rect width="960" height="360" rx="20" fill="url(#bg)" />
-  <text x="72" y="38" font-size="22" font-weight="700" fill="#111827" font-family="Segoe UI, Arial, sans-serif">总星数趋势</text>
-  <text x="72" y="58" font-size="13" fill="#4b5563" font-family="Segoe UI, Arial, sans-serif">当前展示的是所有公开且非派生仓库的总星数</text>
-  <text x="928" y="42" text-anchor="end" font-size="34" font-weight="700" fill="#111827" font-family="Segoe UI, Arial, sans-serif">152</text>
-  <text x="928" y="60" text-anchor="end" font-size="13" fill="#4b5563" font-family="Segoe UI, Arial, sans-serif">等待工作流刷新完整历史</text>
-  <line x1="72" y1="284" x2="928" y2="284" stroke="#9aa4b2" stroke-width="1.2" />
-  <line x1="72" y1="110" x2="928" y2="110" stroke="#dbe3ea" stroke-width="1" />
-  <line x1="72" y1="168" x2="928" y2="168" stroke="#dbe3ea" stroke-width="1" />
-  <line x1="72" y1="226" x2="928" y2="226" stroke="#dbe3ea" stroke-width="1" />
-  <text x="60" y="288" text-anchor="end" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">0</text>
-  <text x="60" y="230" text-anchor="end" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">50</text>
-  <text x="60" y="172" text-anchor="end" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">100</text>
-  <text x="60" y="114" text-anchor="end" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">150</text>
-  <path d="M 150 284 L 280 262 L 420 228 L 580 176 L 710 126 L 840 98 L 840 284 Z" fill="url(#area)" />
-  <path d="M 150 284 L 280 262 L 420 228 L 580 176 L 710 126 L 840 98" fill="none" stroke="#ef4444" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
-  <circle cx="840" cy="98" r="6.5" fill="#ef4444" />
-  <circle cx="840" cy="98" r="12" fill="#ef4444" opacity="0.12" />
-  <text x="150" y="320" text-anchor="middle" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">起点</text>
-  <text x="840" y="320" text-anchor="middle" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">当前</text>
-  <text x="500" y="340" text-anchor="middle" font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">GitHub Actions 运行后会刷新完整历史曲线</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" role="img" aria-labelledby="title desc">
+  <title id="title">Star History</title>
+  <desc id="desc">所有公开仓库的总星数趋势占位图，工作流运行后会刷新为真实历史曲线。</desc>
+  <rect width="960" height="620" fill="#ffffff" />
+  <style>
+    .sketch {
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .hand {
+      font-family: Segoe Print, Comic Sans MS, Microsoft YaHei, sans-serif;
+    }
+  </style>
+  <circle cx="376" cy="44" r="14" fill="#ffd7d7" />
+  <circle cx="376" cy="40" r="8" fill="#f97316" opacity="0.85" />
+  <text x="480" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#111111" class="hand">Star History</text>
+  <text x="480" y="74" text-anchor="middle" font-size="14" fill="#666666" class="hand">当前展示的是占位效果，GitHub Actions 运行后会替换成所有项目累计星数的真实曲线</text>
+  <rect x="128" y="124" width="212" height="36" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2" />
+  <rect x="142" y="135" width="10" height="10" rx="3" fill="#ef4444" />
+  <text x="160" y="145" font-size="15" fill="#111111" class="hand">zspstrive / all-repos</text>
+  <path d="M 118.00 116.00 L 116.80 166.75 L 119.20 217.50 L 116.80 268.25 L 119.20 319.00 L 116.80 369.75 L 119.20 420.50 L 116.80 471.25 L 118.00 522.00" fill="none" stroke="#111111" stroke-width="3.4" class="sketch" />
+  <path d="M 118.00 522.00 L 217.75 520.80 L 317.50 523.20 L 417.25 520.80 L 517.00 523.20 L 616.75 520.80 L 716.50 523.20 L 816.25 520.80 L 918.00 522.00" fill="none" stroke="#111111" stroke-width="3.4" class="sketch" />
+  <text x="100" y="421" text-anchor="end" font-size="15" fill="#111111" class="hand">40</text>
+  <text x="100" y="321" text-anchor="end" font-size="15" fill="#111111" class="hand">80</text>
+  <text x="100" y="221" text-anchor="end" font-size="15" fill="#111111" class="hand">120</text>
+  <text x="100" y="121" text-anchor="end" font-size="15" fill="#111111" class="hand">160</text>
+  <text x="214" y="550" text-anchor="middle" font-size="15" fill="#111111" class="hand">4月</text>
+  <text x="454" y="550" text-anchor="middle" font-size="15" fill="#111111" class="hand">7月</text>
+  <text x="630" y="550" text-anchor="middle" font-size="15" fill="#111111" class="hand">10月</text>
+  <text x="806" y="550" text-anchor="middle" font-size="15" fill="#111111" class="hand">2026</text>
+  <text x="480" y="596" text-anchor="middle" font-size="16" fill="#111111" class="hand">Date</text>
+  <text x="42" y="319" text-anchor="middle" font-size="16" fill="#111111" class="hand" transform="rotate(-90 42 319)">GitHub Stars</text>
+  <path d="M 118.00 476.00 Q 150.00 386.00 174.00 351.00 Q 198.00 316.00 242.00 272.00 Q 286.00 228.00 342.00 205.00 Q 398.00 182.00 474.00 176.00 Q 550.00 170.00 628.00 164.00 Q 706.00 158.00 758.00 136.00 Q 810.00 114.00 854.00 110.00 Q 898.00 110.00 918.00 110.00" fill="none" stroke="#ef4423" stroke-width="4.2" class="sketch" />
+  <circle cx="918" cy="110" r="4.4" fill="#ef4423" />
 </svg>

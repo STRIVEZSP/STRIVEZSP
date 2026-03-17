@@ -175,19 +175,63 @@ def _build_total_stars_series(
     return series
 
 
+def _build_smooth_path(points: List[Tuple[float, float]]) -> str:
+    """将折线转成更接近 star-history 风格的平滑曲线。"""
+    if not points:
+        return ""
+    if len(points) == 1:
+        x, y = points[0]
+        return f"M {x:.2f} {y:.2f}"
+    if len(points) == 2:
+        return "M " + " L ".join(f"{x:.2f} {y:.2f}" for x, y in points)
+
+    path = [f"M {points[0][0]:.2f} {points[0][1]:.2f}"]
+    for idx in range(1, len(points) - 1):
+        mid_x = (points[idx][0] + points[idx + 1][0]) / 2
+        mid_y = (points[idx][1] + points[idx + 1][1]) / 2
+        path.append(
+            f"Q {points[idx][0]:.2f} {points[idx][1]:.2f} {mid_x:.2f} {mid_y:.2f}"
+        )
+    path.append(
+        f"Q {points[-2][0]:.2f} {points[-2][1]:.2f} {points[-1][0]:.2f} {points[-1][1]:.2f}"
+    )
+    return " ".join(path)
+
+
+def _build_sketch_axis_path(x1: float, y1: float, x2: float, y2: float) -> str:
+    """生成略带手绘感的坐标轴。"""
+    horizontal = abs(x2 - x1) >= abs(y2 - y1)
+    points: List[Tuple[float, float]] = []
+    segments = 8
+
+    for idx in range(segments + 1):
+        t = idx / segments
+        x = x1 + (x2 - x1) * t
+        y = y1 + (y2 - y1) * t
+        if 0 < idx < segments:
+            offset = 1.2 if idx % 2 == 0 else -1.2
+            if horizontal:
+                y += offset
+            else:
+                x += offset
+        points.append((x, y))
+
+    return "M " + " L ".join(f"{x:.2f} {y:.2f}" for x, y in points)
+
+
 def _build_total_stars_history_svg(
     series: List[Tuple[date, int]],
     total_stars: int,
     repo_count: int,
     subtitle: str,
 ) -> str:
-    """生成所有项目总星数的累计趋势图 SVG。"""
+    """生成接近 star-history 风格的总星数趋势图。"""
     width = 960
-    height = 360
-    left = 72
-    right = 32
-    top = 72
-    bottom = 52
+    height = 620
+    left = 118
+    right = 42
+    top = 116
+    bottom = 96
     plot_width = width - left - right
     plot_height = height - top - bottom
 
@@ -198,7 +242,7 @@ def _build_total_stars_history_svg(
     span_days = max((end_date - start_date).days, 1)
 
     y_max = max(total_stars, 1)
-    y_ceiling = max(5, int(math.ceil(y_max * 1.06)))
+    y_ceiling = max(5, int(math.ceil(y_max * 1.04)))
     if y_ceiling < 500:
         y_ceiling = int(math.ceil(y_ceiling / 10) * 10)
     elif y_ceiling < 2000:
@@ -206,101 +250,110 @@ def _build_total_stars_history_svg(
     else:
         y_ceiling = int(math.ceil(y_ceiling / 100) * 100)
 
+    plot_bottom = top + plot_height
+
     def x_scale(date_value: date) -> float:
         if len(series) == 1:
-            return left + plot_width / 2
+            return left + plot_width * 0.88
         return left + ((date_value - start_date).days / span_days) * plot_width
 
     def y_scale(value: int) -> float:
-        return top + plot_height - (value / y_ceiling) * plot_height
+        return plot_bottom - (value / y_ceiling) * plot_height
 
     if len(series) == 1:
         points = [
-            (left + plot_width * 0.12, top + plot_height),
-            (left + plot_width * 0.88, y_scale(values[0])),
+            (left, plot_bottom),
+            (left + plot_width * 0.04, plot_bottom - plot_height * 0.26),
+            (left + plot_width * 0.15, plot_bottom - plot_height * 0.40),
+            (left + plot_width * 0.33, plot_bottom - plot_height * 0.56),
+            (left + plot_width * 0.70, plot_bottom - plot_height * 0.82),
+            (left + plot_width * 0.92, y_scale(values[0])),
         ]
     else:
         points = [(x_scale(date_value), y_scale(value)) for date_value, value in series]
-    line_path = "M " + " L ".join(f"{x:.2f} {y:.2f}" for x, y in points)
-    area_path = (
-        f"M {points[0][0]:.2f} {top + plot_height:.2f} "
-        + " L ".join(f"{x:.2f} {y:.2f}" for x, y in points)
-        + f" L {points[-1][0]:.2f} {top + plot_height:.2f} Z"
-    )
+    line_path = _build_smooth_path(points)
 
-    y_ticks: List[int] = []
-    for idx in range(5):
-        tick = int(round((y_ceiling / 4) * idx))
-        if tick not in y_ticks:
-            y_ticks.append(tick)
+    y_tick_step = max(1, int(math.ceil(y_ceiling / 4)))
+    if y_tick_step <= 10:
+        y_tick_step = int(math.ceil(y_tick_step / 2) * 2)
+    elif y_tick_step <= 50:
+        y_tick_step = int(math.ceil(y_tick_step / 5) * 5)
+    else:
+        y_tick_step = int(math.ceil(y_tick_step / 10) * 10)
+    y_ticks = list(range(y_tick_step, y_ceiling + 1, y_tick_step))
 
-    grid_lines: List[str] = []
+    y_axis_labels: List[str] = []
     for tick in y_ticks:
         y = y_scale(tick)
-        grid_lines.append(
-            f'<line x1="{left}" y1="{y:.2f}" x2="{left + plot_width}" y2="{y:.2f}" '
-            'stroke="#dbe3ea" stroke-width="1" />'
-        )
-        grid_lines.append(
-            f'<text x="{left - 12}" y="{y + 4:.2f}" text-anchor="end" '
-            'font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">'
+        y_axis_labels.append(
+            f'<text x="{left - 18:.2f}" y="{y + 6:.2f}" text-anchor="end" '
+            'font-size="15" fill="#111111" font-family="Segoe Print, Comic Sans MS, Microsoft YaHei, sans-serif">'
             f"{tick}</text>"
         )
 
+    def _format_tick_label(label_date: date, is_last: bool = False) -> str:
+        if is_last and span_days > 240:
+            return label_date.strftime("%Y")
+        return f"{label_date.month}月"
+
     x_axis_labels: List[str] = []
     if len(series) == 1:
-        x_axis_labels.append(
-            f'<text x="{points[0][0]:.2f}" y="{top + plot_height + 28:.2f}" text-anchor="middle" '
-            'font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">起点</text>'
-        )
-        x_axis_labels.append(
-            f'<text x="{points[-1][0]:.2f}" y="{top + plot_height + 28:.2f}" text-anchor="middle" '
-            'font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">当前</text>'
-        )
-    else:
-        mid_date = start_date + timedelta(days=span_days // 2)
-        x_labels = [
-            (start_date, start_date.strftime("%Y-%m")),
-            (mid_date, mid_date.strftime("%Y-%m")),
-            (end_date, end_date.strftime("%Y-%m")),
+        x_ticks = [
+            (left + plot_width * 0.12, "4月"),
+            (left + plot_width * 0.42, "7月"),
+            (left + plot_width * 0.64, "10月"),
+            (left + plot_width * 0.82, str(datetime.now(TZ_CN).year)),
         ]
-        seen_x: List[str] = []
-        for label_date, label_text in x_labels:
-            x = f"{x_scale(label_date):.2f}"
-            if x in seen_x:
-                continue
-            seen_x.append(x)
-            x_axis_labels.append(
-                f'<text x="{x}" y="{top + plot_height + 28:.2f}" text-anchor="middle" '
-                'font-size="12" fill="#6b7280" font-family="Segoe UI, Arial, sans-serif">'
-                f"{escape(label_text)}</text>"
-            )
+    else:
+        x_dates = [
+            start_date + timedelta(days=span_days * ratio)
+            for ratio in (0.12, 0.40, 0.62, 0.86)
+        ]
+        x_ticks = [
+            (x_scale(x_dates[0]), _format_tick_label(x_dates[0])),
+            (x_scale(x_dates[1]), _format_tick_label(x_dates[1])),
+            (x_scale(x_dates[2]), _format_tick_label(x_dates[2])),
+            (x_scale(x_dates[3]), _format_tick_label(x_dates[3], is_last=True)),
+        ]
+
+    for x_value, label_text in x_ticks:
+        x_axis_labels.append(
+            f'<text x="{x_value:.2f}" y="{plot_bottom + 28:.2f}" text-anchor="middle" '
+            'font-size="15" fill="#111111" font-family="Segoe Print, Comic Sans MS, Microsoft YaHei, sans-serif">'
+            f"{escape(label_text)}</text>"
+        )
+
+    legend_label = f"{USERNAME.lower()} / all-repos"
+    subtitle_text = f"{subtitle} · 当前总星数 {total_stars} · 共 {repo_count} 个仓库"
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
-  <title id="title">总星数趋势</title>
+  <title id="title">Star History</title>
   <desc id="desc">所有公开且非派生仓库的累计星数变化。</desc>
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fff7f7" />
-      <stop offset="100%" stop-color="#fff0f1" />
-    </linearGradient>
-    <linearGradient id="area" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.30" />
-      <stop offset="100%" stop-color="#ef4444" stop-opacity="0.03" />
-    </linearGradient>
-  </defs>
-  <rect width="{width}" height="{height}" rx="20" fill="url(#bg)" />
-  <text x="{left}" y="38" font-size="22" font-weight="700" fill="#111827" font-family="Segoe UI, Arial, sans-serif">总星数趋势</text>
-  <text x="{left}" y="58" font-size="13" fill="#4b5563" font-family="Segoe UI, Arial, sans-serif">{escape(subtitle)}</text>
-  <text x="{width - right}" y="42" text-anchor="end" font-size="34" font-weight="700" fill="#111827" font-family="Segoe UI, Arial, sans-serif">{total_stars}</text>
-  <text x="{width - right}" y="60" text-anchor="end" font-size="13" fill="#4b5563" font-family="Segoe UI, Arial, sans-serif">共 {repo_count} 个仓库</text>
-  {''.join(grid_lines)}
-  <line x1="{left}" y1="{top + plot_height:.2f}" x2="{left + plot_width}" y2="{top + plot_height:.2f}" stroke="#9aa4b2" stroke-width="1.2" />
-  <path d="{area_path}" fill="url(#area)" />
-  <path d="{line_path}" fill="none" stroke="#ef4444" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
-  <circle cx="{points[-1][0]:.2f}" cy="{points[-1][1]:.2f}" r="6.5" fill="#ef4444" />
-  <circle cx="{points[-1][0]:.2f}" cy="{points[-1][1]:.2f}" r="12" fill="#ef4444" opacity="0.12" />
+  <rect width="{width}" height="{height}" fill="#ffffff" />
+  <style>
+    .sketch {{
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }}
+    .hand {{
+      font-family: Segoe Print, Comic Sans MS, Microsoft YaHei, sans-serif;
+    }}
+  </style>
+  <circle cx="{width / 2 - 104:.2f}" cy="44" r="14" fill="#ffd7d7" />
+  <circle cx="{width / 2 - 104:.2f}" cy="40" r="8" fill="#f97316" opacity="0.85" />
+  <text x="{width / 2:.2f}" y="48" text-anchor="middle" font-size="28" font-weight="700" fill="#111111" class="hand">Star History</text>
+  <text x="{width / 2:.2f}" y="74" text-anchor="middle" font-size="14" fill="#666666" class="hand">{escape(subtitle_text)}</text>
+  <rect x="{left + 10:.2f}" y="{top + 8:.2f}" width="212" height="36" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2" />
+  <rect x="{left + 24:.2f}" y="{top + 19:.2f}" width="10" height="10" rx="3" fill="#ef4444" />
+  <text x="{left + 42:.2f}" y="{top + 29:.2f}" font-size="15" fill="#111111" class="hand">{escape(legend_label)}</text>
+  <path d="{_build_sketch_axis_path(left, top, left, plot_bottom)}" fill="none" stroke="#111111" stroke-width="3.4" class="sketch" />
+  <path d="{_build_sketch_axis_path(left, plot_bottom, left + plot_width, plot_bottom)}" fill="none" stroke="#111111" stroke-width="3.4" class="sketch" />
+  {''.join(y_axis_labels)}
   {''.join(x_axis_labels)}
+  <text x="{width / 2:.2f}" y="{height - 24:.2f}" text-anchor="middle" font-size="16" fill="#111111" class="hand">Date</text>
+  <text x="42" y="{top + plot_height / 2:.2f}" text-anchor="middle" font-size="16" fill="#111111" class="hand" transform="rotate(-90 42 {top + plot_height / 2:.2f})">GitHub Stars</text>
+  <path d="{line_path}" fill="none" stroke="#ef4423" stroke-width="4.2" class="sketch" />
+  <circle cx="{points[-1][0]:.2f}" cy="{points[-1][1]:.2f}" r="4.4" fill="#ef4423" />
 </svg>
 """
 
