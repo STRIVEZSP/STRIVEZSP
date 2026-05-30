@@ -30,8 +30,8 @@ GitHub：https://github.com/STRIVEZSP
 
 ## 成就 & 活动
 
-![Followers](https://img.shields.io/static/v1?label=Followers&message=7&color=lightgrey&style=social&logo=github)
-![Stars](https://img.shields.io/static/v1?label=Stars&message=152&color=lightgrey&style=social&logo=github)
+![Followers](https://img.shields.io/static/v1?label=Followers&message=0&color=lightgrey&style=social&logo=github)
+![Stars](https://img.shields.io/static/v1?label=Stars&message=0&color=lightgrey&style=social&logo=github)
 ![Profile Views](https://komarev.com/ghpvc/?username=STRIVEZSP&color=brightgreen)
 
 ---
@@ -75,27 +75,23 @@ GitHub：https://github.com/STRIVEZSP
 
 | 项目名 | 简介 | 技术栈 | Stars |
 |:--------|:------|:--------|:------|
-| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [STRIVEZSP](https://github.com/STRIVEZSP/STRIVEZSP) | 暂无描述 | Python | ⭐ 3 |
-| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [Film-v1](https://github.com/STRIVEZSP/Film-v1) | 果冻影院：萌趣电影票务系统 项目简介 果冻影院 是一个基于 Vue.js、Expre... | Java | ⭐ 9 |
-| <img src="https://api.iconify.design/ph:film-strip-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AI_Movie](https://github.com/STRIVEZSP/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 60 |
-| <img src="https://api.iconify.design/ph:robot-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [SpringAI-langchain-StudyBot](https://github.com/STRIVEZSP/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，... | Java | ⭐ 46 |
-| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [Sport_community](https://github.com/STRIVEZSP/Sport_community) | Spring Boot+Vue3运动社区云图库，打卡排行、社区互动、图片管理+AI。... | Vue | ⭐ 4 |
-| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [Windsurf_FREE_FIXED](https://github.com/STRIVEZSP/Windsurf_FREE_FIXED) | 1 | JavaScript | ⭐ 1 |
+| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [pictclub](https://github.com/STRIVEZSP/pictclub) | 暂无描述 | Vue | ⭐ 0 |
+| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [STRIVEZSP](https://github.com/STRIVEZSP/STRIVEZSP) | 暂无描述 | Python | ⭐ 0 |
+| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [STUDYBot](https://github.com/STRIVEZSP/STUDYBot) | 暂无描述 | Java | ⭐ 0 |
+| <img src="https://api.iconify.design/ph:film-slate-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AIMovie](https://github.com/STRIVEZSP/AIMovie) | 暂无描述 | Java | ⭐ 0 |
 
 
 ### 🌟 Star 最多项目
 
 | 项目名 | 简介 | 技术栈 | Stars |
 |:--------|:------|:--------|:------|
-| <img src="https://api.iconify.design/ph:film-strip-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AI_Movie](https://github.com/STRIVEZSP/AI_Movie) | 果冻影院 2.0融合了影视浏览、实时通讯、社区互动与智能 AI 服务。项目基于 Sp... | Java | ⭐ 60 |
-| <img src="https://api.iconify.design/ph:robot-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [SpringAI-langchain-StudyBot](https://github.com/STRIVEZSP/SpringAI-langchain-StudyBot) | 本科毕业设计基础上二次开发 采用 Spring Boot 和 Vue.js 技术栈，... | Java | ⭐ 46 |
-| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [Film-v1](https://github.com/STRIVEZSP/Film-v1) | 果冻影院：萌趣电影票务系统 项目简介 果冻影院 是一个基于 Vue.js、Expre... | Java | ⭐ 9 |
-| <img src="https://api.iconify.design/ph:brain-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AI-tiku](https://github.com/STRIVEZSP/AI-tiku) | 本项目采用 Spring Boot 2.7.x、Vue 3、MySQL、Redis ... | Java | ⭐ 6 |
-| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [-Vue3-Node.js-emotion-record](https://github.com/STRIVEZSP/-Vue3-Node.js-emotion-record) | 情绪日记 vue 1. 使用vue3开发的每周心情记录，和心情统计项目。前端使用vu... | Vue | ⭐ 5 |
-| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [ZSTRIVE.](https://github.com/STRIVEZSP/ZSTRIVE.) | 没有说明的说明就是最好的说明 | Mixed | ⭐ 4 |
+| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [STUDYBot](https://github.com/STRIVEZSP/STUDYBot) | 暂无描述 | Java | ⭐ 0 |
+| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [STRIVEZSP](https://github.com/STRIVEZSP/STRIVEZSP) | 暂无描述 | Python | ⭐ 0 |
+| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [pictclub](https://github.com/STRIVEZSP/pictclub) | 暂无描述 | Vue | ⭐ 0 |
+| <img src="https://api.iconify.design/ph:film-slate-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AIMovie](https://github.com/STRIVEZSP/AIMovie) | 暂无描述 | Java | ⭐ 0 |
 
 
-> 🕒 最后更新: 2026-03-17 11:29:16 (UTC+8)
+> 🕒 最后更新: 2026-05-31 06:33:47 (UTC+8)
 
 <!-- PROJECTS-LIST:END -->
 
