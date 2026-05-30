@@ -17,7 +17,7 @@
   <text x="480" y="74" text-anchor="middle" font-size="14" fill="#666666" class="hand"></text>
   <rect x="128" y="124" width="212" height="36" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2" />
   <rect x="142" y="135" width="10" height="10" rx="3" fill="#ef4444" />
-  <text x="160" y="145" font-size="15" fill="#111111" class="hand">zspstrive / all-repos</text>
+  <text x="160" y="145" font-size="15" fill="#111111" class="hand">strivezsp / all-repos</text>
   <path d="M 118.00 116.00 L 116.80 166.75 L 119.20 217.50 L 116.80 268.25 L 119.20 319.00 L 116.80 369.75 L 119.20 420.50 L 116.80 471.25 L 118.00 522.00" fill="none" stroke="#111111" stroke-width="3.4" class="sketch" />
   <path d="M 118.00 522.00 L 217.75 520.80 L 317.50 523.20 L 417.25 520.80 L 517.00 523.20 L 616.75 520.80 L 716.50 523.20 L 816.25 520.80 L 918.00 522.00" fill="none" stroke="#111111" stroke-width="3.4" class="sketch" />
   <text x="100" y="421" text-anchor="end" font-size="15" fill="#111111" class="hand">40</text>

@@ -18,7 +18,7 @@ from github.Repository import Repository
 # ===============================
 # 0. 配置
 # ===============================
-USERNAME = "ZSPSTRIVE"
+USERNAME = "STRIVEZSP"
 README_PATH = "README.md"
 STAR_HISTORY_ASSET_PATH = "assets/total-stars-history.svg"
 LATEST_N = 6
@@ -445,7 +445,7 @@ def _build_achievements_block(followers: int, stars: int) -> str:
     followers_url = f"https://img.shields.io/static/v1?label=Followers&message={followers}&color=lightgrey&style=social&logo=github"
     stars_url = f"https://img.shields.io/static/v1?label=Stars&message={stars}&color=lightgrey&style=social&logo=github"
     # Profile Views 只能动态，komarev 不支持 static
-    views_url = "https://komarev.com/ghpvc/?username=ZSPSTRIVE&color=brightgreen"
+    views_url = "https://komarev.com/ghpvc/?username=STRIVEZSP&color=brightgreen"
 
     lines = [
         "## 成就 & 活动",
