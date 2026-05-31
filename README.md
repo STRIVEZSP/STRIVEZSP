@@ -75,8 +75,8 @@ GitHub：https://github.com/STRIVEZSP
 
 | 项目名 | 简介 | 技术栈 | Stars |
 |:--------|:------|:--------|:------|
-| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [pictclub](https://github.com/STRIVEZSP/pictclub) | 暂无描述 | Vue | ⭐ 0 |
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [STRIVEZSP](https://github.com/STRIVEZSP/STRIVEZSP) | 暂无描述 | Python | ⭐ 0 |
+| <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [pictclub](https://github.com/STRIVEZSP/pictclub) | 暂无描述 | Vue | ⭐ 0 |
 | <img src="https://api.iconify.design/ph:rocket-launch-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [STUDYBot](https://github.com/STRIVEZSP/STUDYBot) | 暂无描述 | Java | ⭐ 0 |
 | <img src="https://api.iconify.design/ph:film-slate-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AIMovie](https://github.com/STRIVEZSP/AIMovie) | 暂无描述 | Java | ⭐ 0 |
 
@@ -91,7 +91,7 @@ GitHub：https://github.com/STRIVEZSP
 | <img src="https://api.iconify.design/ph:film-slate-bold.svg?color=%23000000" width="20" height="20" style="vertical-align:middle; margin-right:4px;" /> [AIMovie](https://github.com/STRIVEZSP/AIMovie) | 暂无描述 | Java | ⭐ 0 |
 
 
-> 🕒 最后更新: 2026-05-31 06:33:47 (UTC+8)
+> 🕒 最后更新: 2026-06-01 06:37:20 (UTC+8)
 
 <!-- PROJECTS-LIST:END -->
 
